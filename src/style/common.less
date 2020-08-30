@@ -1,0 +1,62 @@
+@import './default.less';
+ul,li{
+    list-style: none;
+}
+::-webkit-scrollbar {
+    /*滚动条整体样式*/
+    width : 8px;  /*高宽分别对应横竖滚动条的尺寸*/
+    height: 10px;
+}
+::-webkit-scrollbar-thumb {
+    /*滚动条里面小方块*/
+    border-radius: 10px;
+    box-shadow   : inset 0 0 5px rgba(0, 0, 0, 0.2);
+    background   : #a3a3a3;
+}
+::-webkit-scrollbar-track {
+    /*滚动条里面轨道*/
+    box-shadow   : inset 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    background   : #ededed;
+}
+.container{
+    width:100%;
+    .nav-left{
+        background-color:#001529;
+        color: #ffffff;
+        height: calc(100vh);
+        overflow-y: auto;
+        
+    }
+    .main{
+        height: calc(100vh);
+        background-color: @colorL;
+        overflow: auto;
+    }
+    .content{
+        position: relative;
+        padding: 20px;
+    }
+}
+.content-wrap{
+    background: #ffffff;
+    border: 1px solid #e8e8e8;
+    margin-top: -3px;
+    .ant-table-wrapper{
+        margin-left: -1px;
+        margin-right: -2px;
+    }
+}
+.ant-card{
+    button{
+        margin-right: 10px;
+    }
+}
+.ant-row {
+    height: 46px;
+}
+.ant-table-cell{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
